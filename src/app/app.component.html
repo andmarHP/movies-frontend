@@ -6,4 +6,8 @@
 
 <app-listado-peliculas [peliculas]="peliculasProximosEstrenos"></app-listado-peliculas>
 
+<br>
+
+<input type="file" style="display: none" #cargador>
+<button (click)="cargador.click()" >Cargar Archivo</button>
 
