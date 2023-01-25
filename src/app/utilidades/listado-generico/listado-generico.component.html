@@ -1,10 +1,10 @@
 
 <div *ngIf="!listado">
-  <span>
+  <span #cargando>
     <ng-content select="[cargando]"></ng-content>
   </span>
   <span *ngIf="!cargando.innerHTML.trim()">
-    <h2> Aqui va el spinner </h2>
+    <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" />
   </span>
 </div>
 
