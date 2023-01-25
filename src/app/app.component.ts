@@ -27,28 +27,12 @@ export class AppComponent implements OnInit {
           precio:200
         },
       ]
-    }, 2000);
+    }, 3000);
   }
 
-  peliculasEnCines
+  peliculasEnCines;
 
-  peliculasProximosEstrenos = [
-    {
-      titulo:"thor",
-      fechaLanzamiento:new Date(),
-      precio:433
-    },
-    {
-      titulo:"el camino",
-      fechaLanzamiento:new Date(),
-      precio:2030
-    },
-    {
-      titulo:"hulk",
-      fechaLanzamiento:new Date(),
-      precio:452
-    },
-  ];
+  peliculasProximosEstrenos=[];
 
 
 }
