@@ -7,7 +7,7 @@
   <p>No hay peliculas disponibles</p>
 </div>
 
-<div *ngIf="peliculas && peliculas.length > 0" class="index-contenedor">
+<ng-container *ngIf="peliculas && peliculas.length > 0" class="index-contenedor">
 
   <div *ngFor="let pelicula of peliculas; let index = index" class="borde">
     <h3>Pelicula {{ index }}"</h3>
@@ -18,4 +18,4 @@
     <div>Precio {{ index }}: {{ pelicula.precio | date:"dd:MM:yyyy" }}</div>
   </div>
 
-</div>
+</ng-container>
