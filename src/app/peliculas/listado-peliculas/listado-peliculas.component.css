@@ -1,0 +1,12 @@
+.index-contenedor{
+  margin: 3px solid black;
+  border-radius: 10px;
+  background-color: azure;
+  width: 80%;
+  margin : 0 auto;
+  text-align: center;
+}
+
+.borde{
+  border: 5px solid black
+}

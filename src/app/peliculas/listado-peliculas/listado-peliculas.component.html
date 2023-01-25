@@ -1,0 +1,19 @@
+
+<div *ngIf="!peliculas">
+  <p>Aqui va el spinner</p>
+</div>
+
+<div *ngIf="peliculas?.length === 0">
+  <p>No hay peliculas disponibles</p>
+</div>
+
+<div *ngIf="peliculas && peliculas.length > 0" class="index-contenedor">
+
+  <div *ngFor="let pelicula of peliculas; let index = index" class="borde">
+    <h3>Pelicula {{ index }}</h3>
+    <div>Titulo: {{ pelicula.titulo }}</div>
+    <div>Fecha Lanzamiento {{ index }}: {{ pelicula.fechaLanzamiento }}</div>
+    <div>Precio {{ index }}: {{ pelicula.precio | date:"dd:MM:yyyy" }}</div>
+  </div>
+
+</div>
