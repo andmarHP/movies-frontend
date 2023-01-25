@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-listado-peliculas',
@@ -7,26 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoPeliculasComponent implements OnInit {
 
-  peliculas;
+  @Input() peliculas;
 
   ngOnInit(): void {
-    this.peliculas = [
-      {
-        titulo:"mago de oz",
-        fechaLanzamiento:new Date(),
-        precio:200
-      },
-      {
-        titulo:"sangre por sangre",
-        fechaLanzamiento:new Date(),
-        precio:200
-      },
-      {
-        titulo:"Spider man 1",
-        fechaLanzamiento:new Date(),
-        precio:200
-      },
-    ]
+
+    
   }
 
 }

@@ -10,11 +10,45 @@ export class AppComponent implements OnInit {
 
   ngOnInit():void{
     setTimeout(() => {
-      
-    }, 1000);
+      this.peliculasEnCines = [
+        {
+          titulo:"mago de oz",
+          fechaLanzamiento:new Date(),
+          precio:200
+        },
+        {
+          titulo:"sangre por sangre",
+          fechaLanzamiento:new Date(),
+          precio:200
+        },
+        {
+          titulo:"Spider man 1",
+          fechaLanzamiento:new Date(),
+          precio:200
+        },
+      ]
+    }, 2000);
   }
 
-  peliculas;
+  peliculasEnCines
+
+  peliculasProximosEstrenos = [
+    {
+      titulo:"thor",
+      fechaLanzamiento:new Date(),
+      precio:433
+    },
+    {
+      titulo:"el camino",
+      fechaLanzamiento:new Date(),
+      precio:2030
+    },
+    {
+      titulo:"hulk",
+      fechaLanzamiento:new Date(),
+      precio:452
+    },
+  ];
 
 
 }
